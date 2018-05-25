@@ -9,7 +9,7 @@ Read the documentation provided in the links in order to answer the questions be
 #### Files + Folders
 ```sh
 # create assignment directory
-cd ~/Documents/muktek/assignments
+cd ~/muktek/assignments
 mkdir assignment--reading-api-documentation
 cd assignment--reading-api-documentation
 
