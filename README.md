@@ -27,6 +27,8 @@ There is an example on how to complete each question in `js/api-01-iceland.js`.
 
 ## Questions
 
+## Part I
+
 ##### Iceland API
 https://docs.apis.is/
 
@@ -46,6 +48,7 @@ https://vpic.nhtsa.dot.gov/api/
 
 3. What are the types of models that exist for Toyota trucks in 2017?
 
+## Part II
 
 ##### Geocoding
 1. What is the geographic location of Montreal?
