@@ -32,28 +32,27 @@ There is an example on how to complete each question in `js/api-01-iceland.js`.
 ##### National Highway Transit Safety Administration
 https://vpic.nhtsa.dot.gov/api/
 
-1. How many types of Chevrolet models are registered with the NHTSA?
+1. How many total car makes are there?
 
-2. What are the vehicle types that Nissan has?
+2. How many types of Chevrolet models are registered with the NHTSA?
 
-3. What are the types of models that exist for Toyota trucks in 2017?
+3. What are the vehicle types that Nissan has?
+
+4. What are the types of models that exist for Toyota trucks in 2017?
+
+
+
+    'How many episodes have been made for The Simpsons',
 
 ## Part II
 
 ##### TV Maze
 http://www.tvmaze.com/api
 
-1. What is the average rating for the show Better Call Saul?
+1. What is the score for the show Narcos?',
 
-2. When was the premiere date for the 9th season of Friends?
+2. How many episodes have been made for The Simpsons'
 
 3. How many shows has actor Andrew Grimes (of the Walking Dead) appeared in?
 
-## Part III
-
-##### Geocoding
-1. What is the geographic location of Montreal?
-  - https://maps.googleapis.com/maps/api/geocode/json?address=Montreal
-
-2. What time does the sun set in Montreal (based on the Google geocode coordinates)?
-  - https://sunrise-sunset.org/api
+4. When was the premiere date for the 9th season of Friends?

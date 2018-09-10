@@ -20,74 +20,41 @@ QuestionSet.prototype.generateQuestionTemplate = function(){
 }
 
 
-let icelandObj = {
-  fullTitle: 'Iceland API',
-  shortTitle: 'iceland',
-  questions: [
-   `How many <u>births</u> were there in Iceland's <u>national hospital</u>?`,
-   `What is the <u>next concert</u> event in Iceland?`,
-   `How many <u>arrival flights</u> are scheduled for today?`
-  ]
-}
 
-let nhtsaObj = {
+const nhtsaObj = {
   fullTitle: 'National Highway Transit Safety Administration API',
   shortTitle: 'nhtsa',
   questions: [
+    'How many total car makes are registered with the NHTSA?',
     'How many types of Chevrolet models are registered with the NHTSA?',
     'What are the vehicle types that Nissan has?',
     'What are the types of models that exist for Toyota trucks in 2017?'
   ]
 }
 
-let apiMashupObj = {
-  fullTitle: 'Google Geocode API + Sunrise-Sunset API + Darksky',
-  shortTitle: 'apimashup',
-  questions: [
-    'What are latitude longitude coordinates of Montreal?',
-    'What time does the sun set in Montreal (based on the Google Geocode API coordinates)?',
-    'What is the weekly weather forecast in Montreal?',
-
-  ]
-}
-
-let tvMazeObj = {
+const tvMazeObj = {
   fullTitle: 'TVMaze API',
   shortTitle: 'tvmaze',
   questions: [
-    'What is the average rating for the show Better Call Saul?',
+    'What is the score for the show Narcos?',
+    'How many episodes have been made for The Simpsons',
     'When was the premiere date for the 9th season of Friends?',
-    'How many shows has actor Andrew Grimes (of the Walking Dead) appeared in?',
+    'How many shows has actor Andrew Lincoln (of the Walking Dead) appeared in?',
 
   ]
 }
 
 
-let icelandSet = new QuestionSet(icelandObj)
-let nthsaSet = new QuestionSet(nhtsaObj)
-let apiMashupSet = new QuestionSet(apiMashupObj)
-let tvMazeSet = new QuestionSet(tvMazeObj)
+const nthsaSet = new QuestionSet(nhtsaObj)
+const tvMazeSet  = new QuestionSet(tvMazeObj)
 
 
 document.querySelector('main')
   .innerHTML = `
-    ${icelandSet.generateQuestionTemplate()}
     ${nthsaSet.generateQuestionTemplate()}
-    ${apiMashupSet.generateQuestionTemplate()}
     ${tvMazeSet.generateQuestionTemplate()}
-
   `
 /*
-
-  ##### Iceland API
-  https://docs.apis.is/
-
-  1. How many births were there in Iceland's national hospital?
-
-  2.  How many **arrival** flights are scheduled for today?
-
-  3.  What is the next concert event in Iceland? 
-
 
   ##### National Highway Transit Safety Administration
   https://vpic.nhtsa.dot.gov/api/
@@ -97,6 +64,16 @@ document.querySelector('main')
   2. What are the vehicle types that Nissan has?
 
   3. What are the types of models that exist for Toyota trucks in 2017?
+
+
+  ##### TV Maze
+  https://www.tvmaze.com/ap
+
+  1. What is the average rating for the show Better Call Saul?
+
+  2. When was the premiere date for the 9th season of Friends?
+
+  3. How many shows has actor Andrew Grimes (of the Walking Dead) appeared in?
 
 
   ##### Geocoding
@@ -111,12 +88,5 @@ document.querySelector('main')
     - Note: You will have to create an account.
 
 
-  ##### TV Maze
-  https://www.tvmaze.com/ap
 
-  1. What is the average rating for the show Better Call Saul?
-
-  2. When was the premiere date for the 9th season of Friends?
-
-  3. How many shows has actor Andrew Grimes (of the Walking Dead) appeared in?
-  */
+*/
